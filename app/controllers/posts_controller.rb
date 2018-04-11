@@ -16,5 +16,18 @@ class PostsController < ApplicationController
     def show
         @post = Post.find(params[:id])
     end
+    def upvote
+        @post = Post.find(params[:id])
+        @post.upvotes +=1
+        @post.save
+        redirect_to post_path(@post)
+    end
+    def downvote
+        @post = Post.find(params[:id])
+        @post.downvotes +=1
+        @post.save
+        redirect_to post_path(@post)
+    end
+
 
 end
