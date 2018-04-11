@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+* {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: slategrey;
+}
+h1 {
+    font-weight: 700;
+}
+th {
+    color: dodgerblue; 
+}
+td {
+    color: white; 
+}
