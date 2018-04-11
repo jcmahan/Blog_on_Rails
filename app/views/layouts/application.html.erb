@@ -8,9 +8,12 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag 'https://cdnjs.cloudflare.com/ajax/libs/hack/0.8.1/hack.css' %>
     <%= stylesheet_link_tag 'https://cdnjs.cloudflare.com/ajax/libs/hack/0.8.1/standard.css' %>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
 
   <body>
+  <div class=container>
     <%= yield %>
+    </div>
   </body>
 </html>
