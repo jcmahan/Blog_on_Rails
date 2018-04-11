@@ -26,3 +26,6 @@ th {
 td {
     color: white; 
 }
+#post_content {
+    overflow: auto;
+}

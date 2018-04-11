@@ -1,6 +1,6 @@
 <h1>James' Blog App</h1>
 
-<a href="#">New Post</a>
+<%= link_to "New Post", posts_new_path %>
     <center>
         <h2>All Posts</h2>
     </center>
@@ -16,7 +16,7 @@
 
  <% @posts.each do |post|%> 
     <tr>
-        <td><%= post.title %></td>
+        <td><%= link_to post.title, post_path(post) %></td>
         <td><%= post.upvotes %></td>
         <td><%= post.downvotes %></td>
         <td><%= post.created_at %></td>
